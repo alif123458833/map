@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MySekolah Pelawat</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:30px;
+}
+
+.container{
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:15px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    border-radius:15px;
+}
+
+button{
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#0d47a1;
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MySekolah Pelawat</h1>
+    <p>Selamat Datang ke Aplikasi Pelawat Sekolah</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Info Sekolah</h2>
+        <p>Maklumat tentang sekolah.</p>
+        <button onclick="showInfo()">Lihat Info</button>
+    </div>
+
+    <div class="card">
+        <h2>Peta Sekolah</h2>
+        <p>Lihat lokasi kawasan sekolah.</p>
+        <button onclick="showMap()">Lihat Peta</button>
+    </div>
+
+    <div class="card">
+        <h2>Galeri Sekolah</h2>
+        <img src="https://via.placeholder.com/400x200" alt="Sekolah">
+    </div>
+
+    <div class="card">
+        <h2>Hubungi Sekolah</h2>
+        <p>No Telefon: 07-1234567</p>
+        <p>Email: sekolah@gmail.com</p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 MySekolah Pelawat
+</footer>
+
+<script>
+function showInfo(){
+    alert("Sekolah ini menyediakan pendidikan berkualiti kepada pelajar.");
+}
+
+function showMap(){
+    window.open("https://maps.google.com");
+}
+</script>
+
+</body>
+</html>
